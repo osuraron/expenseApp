@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Dark background color for the body */
+    color: #e0e0e0; /* Light text color for contrast */
+}
+
+.container {
+    background: #1e1e1e; /* Dark background for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow for contrast */
+    width: 100%;
+    max-width: 400px; /* Maximum width of the container */
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333; /* Dark border color */
+    border-radius: 4px;
+    background: #2c2c2c; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-size: 1rem; /* Font size for better readability */
+}
+
+button {
+    border: none;
+    background-color: #007bff; /* Blue color for the button */
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #333; /* Darker border color for list items */
+}
+
+#total-expense {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.filter-container {
+    margin: 10px 0;
+}
+
+#month-select {
+    padding: 8px;
+    border: 1px solid #333; /* Dark border color */
+    border-radius: 4px;
+    background: #2c2c2c; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 0.9rem; /* Slightly smaller font size */
+        padding: 8px;
+    }
+    
+    li {
+        font-size: 0.9rem; /* Slightly smaller font size for list items */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    input, button {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+        padding: 6px;
+    }
+    
+    li {
+        font-size: 0.8rem; /* Smaller font size for list items */
+    }
+}
