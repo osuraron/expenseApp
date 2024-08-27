@@ -23,11 +23,12 @@
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-        <form id="expense-form">
-            <input type="text" id="expense-description" placeholder="Expense Description" required>
-            <input type="number" id="expense-amount" placeholder="Amount" required>
-            <button type="submit">Add Expense</button>
-        </form>
+        <form id="expense-form" aria-label="Expense Form">
+          <input type="text" id="expense-description" placeholder="Expense Description" aria-label="Expense Description" required>
+          <input type="number" id="expense-amount" placeholder="Amount" aria-label="Expense Amount" required>
+          <button type="submit" aria-label="Add or Edit Expense">Add Expense</button>
+      </form>
+      
 
         <div class="filter-container">
             <label for="month-select">Filter by Month:</label>
