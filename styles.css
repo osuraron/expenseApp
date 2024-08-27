@@ -91,7 +91,7 @@ li {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
     .container {
         padding: 10px;
     }
